@@ -31,10 +31,20 @@
             text-align: center;
             padding: 30px 0;
             opacity: 0.8;
+            position: relative;
         }
 
         .header h1 {
             margin-bottom: 10px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 200px; /* Größere Breite für das Logo */
+            height: auto; /* Automatische Höhe basierend auf der Breite */
         }
 
         nav {
@@ -70,6 +80,12 @@
         .footer p {
             margin: 0;
         }
+
+        /* Stil für die Karte */
+        iframe {
+            width: 100%; /* Die Karte füllt den gesamten verfügbaren Bereich */
+            height: 500px; /* Eine feste Höhe für die Karte festlegen */
+        }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3678393439124773"
     crossorigin="anonymous"></script>
@@ -78,6 +94,7 @@
 <body>
     <header class="header">
         <div class="container">
+            <img src="D:\Erwache Website\Bilder\logo.png" alt="Logo" class="logo">
             <h1>Erwache Dein Begleiter</h1>
             <p>Ein Blog über Selbstfindung und Inspiration</p>
         </div>
@@ -92,7 +109,7 @@
             <a href="Unterstützen.html">Unterstützen</a> 
             <!-- Weitere Navigationslinks hinzufügen -->
         </div>
-        <iframe src="https://www.google.com/maps/d/embed?mid=16XMlshUoJ2YXxa3GyE_JhWiV9kuQnvq-&ehbc=2E312F" width="1600" height="1000"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=16XMlshUoJ2YXxa3GyE_JhWiV9kuQnvq-&ehbc=2E312F" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </nav>
     <footer class="footer">
         <div class="container">

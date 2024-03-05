@@ -31,10 +31,21 @@
             text-align: center;
             padding: 30px 0;
             opacity: 0.8;
+            position: relative;
         }
 
         .header h1 {
             margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 200px; /* Größere Breite für das Logo */
+            height: auto; /* Automatische Höhe basierend auf der Breite */
         }
 
         nav {
@@ -73,11 +84,10 @@
 
         .content {
             margin-top: 20px;
+            text-align: center;
         }
 
         .donate-button {
-            display: flex;
-            justify-content: center;
             margin-top: 20px;
         }
 
@@ -101,8 +111,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1>Spenden für unsere Website</h1>
-            <p>Unterstützen Sie unsere Arbeit mit einer Spende!</p>
+            <img src="D:\Erwache Website\Bilder\logo.png" alt="Logo" class="logo"> <!-- Neuer Abschnitt -->
+            <h1>Erwache Dein Begleiter</h1>
+            <p>Ein Blog über Selbstfindung und Inspiration</p>
         </div>
     </header>
     <nav>
@@ -131,3 +142,4 @@
 </body>
 
 </html>
+

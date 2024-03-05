@@ -20,7 +20,7 @@
         }
 
         .container {
-            width: 80%;
+            width: 90%; /* Anpassung der Breite für mobile und Desktop */
             margin: auto;
             overflow: hidden;
         }
@@ -31,10 +31,20 @@
             text-align: center;
             padding: 30px 0;
             opacity: 0.8;
+            position: relative; /* Position relativ für die Positionierung des Logos */
         }
 
         .header h1 {
             margin-bottom: 10px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 200px; /* Größere Breite für das Logo */
+            height: auto; /* Automatische Höhe basierend auf der Breite */
         }
 
         nav {
@@ -70,6 +80,12 @@
         .footer p {
             margin: 0;
         }
+
+        /* Stil für die Karte */
+        #map {
+            width: 100%; /* Die Karte füllt den gesamten verfügbaren Bereich */
+            height: 500px; /* Eine feste Höhe für die Karte festlegen */
+        }
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3678393439124773"
     crossorigin="anonymous"></script>
@@ -78,6 +94,7 @@
 <body>
     <header class="header">
         <div class="container">
+            <img src="D:\Erwache Website\Bilder\logo.png" alt="Logo" class="logo">
             <h1>Erwache Dein Begleiter</h1>
             <p>Ein Blog über Selbstfindung und Inspiration</p>
         </div>
@@ -94,11 +111,11 @@
         </div>
         <script type="text/javascript">
             // Map appearance
-            var width="1600";         // width in pixels or percentage
-            var height="1000";         // height in pixels
-            var latitude="36.00";     // center latitude (decimal degrees)
-            var longitude="-5.40";    // center longitude (decimal degrees)
-            var zoom="8";             // initial zoom (between 3 and 18)
+            var width = "100%"; // Breite der Karte anpassen
+            var height = "500"; // Höhe der Karte festlegen
+            var latitude = "36.00"; // center latitude (decimal degrees)
+            var longitude = "-5.40"; // center longitude (decimal degrees)
+            var zoom = "8"; // initial zoom (between 3 and 18)
         </script>
         <script type="text/javascript" src="https://www.vesselfinder.com/aismap.js"></script>
     </nav>

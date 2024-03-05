@@ -19,8 +19,16 @@
             line-height: 1.6;
         }
 
+        .logo {
+            position: absolute;
+            top: 10px; /* Position oben 10px */
+            left: 10px; /* Position links 10px */
+            width: 150px; /* Größere Breite für das Logo */
+            height: auto; /* Automatische Höhe basierend auf der Breite */
+        }
+
         .container {
-            width: 80%;
+            width: 90%; /* Änderung der Breite auf 90% für bessere Anpassung */
             margin: auto;
             overflow: hidden;
         }
@@ -46,6 +54,7 @@
             position: sticky;
             top: 0;
             z-index: 999;
+            width: 100%;
         }
 
         nav a {
@@ -65,11 +74,18 @@
             padding: 10px;
             opacity: 0.8;
             margin-top: 20px;
+            width: 100%;
         }
 
         .footer p {
             margin: 0;
         }
+
+        .website {
+            width: 100%;
+            height: 600px;
+        }
+
     </style>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3678393439124773"
     crossorigin="anonymous"></script>
@@ -78,6 +94,7 @@
 <body>
     <header class="header">
         <div class="container">
+            <img src="D:\Erwache Website\Bilder\logo.png" alt="Logo" class="logo"> <!-- Neuer Abschnitt -->
             <h1>Erwache Dein Begleiter</h1>
             <p>Ein Blog über Selbstfindung und Inspiration</p>
         </div>
@@ -92,8 +109,8 @@
             <a href="Unterstützen.html">Unterstützen</a> 
             <!-- Weitere Navigationslinks hinzufügen -->
         </div>
-        <iframe title="FlightRadar24" class="website" type="text/html" width="1600" height="1000" src="https://www.flightradar24.com/simple_index.php?lat=25.25&amp;lon=54.36&amp;z=2&amp;label1=callsign&amp;label2=altspeed&amp;label3=tofrom&amp;si ze=auto" frameborder="0" allowfullscreen=""></iframe>
     </nav>
+    <iframe title="FlightRadar24" class="website" type="text/html" src="https://www.flightradar24.com/simple_index.php?lat=25.25&amp;lon=54.36&amp;z=2&amp;label1=callsign&amp;label2=altspeed&amp;label3=tofrom&amp;si ze=auto" frameborder="0" allowfullscreen=""></iframe>
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Erwache Dein Begleiter</p>

@@ -36,7 +36,14 @@
         .header h1 {
             margin-bottom: 10px;
         }
-
+        .logo {
+            position: absolute;
+            top: 10%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 200px; /* Größere Breite für das Logo */
+            height: auto; /* Automatische Höhe basierend auf der Breite */
+        }
         nav {
             background-color: #2E2E2E;
             color: white;
@@ -76,8 +83,8 @@
         }
 
         .blog-post img {
-            max-height: 40vh;
-            width: auto;
+            max-width: 100%; /* Bildbreite auf 100% des Container setzen */
+            height: auto; /* Automatische Höhe beibehalten */
             border-radius: 10px;
             display: block;
             margin: 0 auto;
@@ -120,6 +127,7 @@
 <body>
     <header class="header">
         <div class="container">
+            <img src="D:\Erwache Website\Bilder\logo.png" alt="Logo" class="logo"> <!-- Neuer Abschnitt -->
             <h1>Erwache Dein Begleiter</h1>
             <p>Ein Blog über Selbstfindung und Inspiration</p>
         </div>
@@ -220,7 +228,7 @@
             // Weiter-Funktion hier implementieren
             // Zum nächsten Beitrag navigieren
             // Hier können Sie die URL des nächsten Beitrags angeben
-            window.location.href = 'nächster_beitrag.html';
+            window.location.href = 'KrankheitAlsSymbol.html';
         });
     </script>
     <footer class="footer">
